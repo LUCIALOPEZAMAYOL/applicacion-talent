@@ -1,17 +1,16 @@
 <template>
-  <v-container fluid class="down-top-padding">
-    <Login></Login>
-  </v-container>
+    <v-container class="container" fluid>
+        <CardCurso class="cardCurso"></CardCurso>
+    </v-container>
 </template>
 
 <script>
-import Footer from "@/layouts/footer/Footer";
-import Login from "../components/Login.vue";
+import CardCurso from "../components/CardCurso.vue";
 export default {
   name: "Home",
   components: {
-    Footer,
-    Login
+    CardCurso
 }
 };
 </script>
+

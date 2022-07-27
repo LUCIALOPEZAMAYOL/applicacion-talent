@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "@/views/Home";
+import error from "@/views/Error"
 
 Vue.use(Router);
 
@@ -12,11 +12,21 @@ export default new Router({
       component: () => import("@/layouts/Layout"),
       children: [
         {
-          name: 'home',
-          path: 'home',
-          component: () => import('@/views/Home'),
-      },
+          name: "home",
+          path: "home",
+          component: () => import("@/views/Home")
+        },
+        {
+          name: "chat",
+          path: "chat",
+          component: () => import("@/views/Chat")
+        }
       ]
+    },
+    {
+      name: "error",
+      path: "/error",
+      component: error
     }
   ]
 });
