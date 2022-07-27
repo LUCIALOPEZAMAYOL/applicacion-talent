@@ -1,5 +1,5 @@
 <template>
-    <v-main>
+    <v-main >
         <v-row dense>
             <h1>Cursos</h1>
         </v-row>
@@ -133,6 +133,7 @@
 
 <script>
 export default {
+  name:"CardCurso",
   data: () => ({
      cards: [
       {

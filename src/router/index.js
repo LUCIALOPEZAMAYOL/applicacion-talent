@@ -20,6 +20,11 @@ export default new Router({
           name: "mentors",
           path: "mentors",
           component: () => import("@/views/Mentors")
+        },
+        {
+          name: "chat",
+          path: "chat",
+          component: () => import("@/views/Chat")
         }
       ]
     },

@@ -21,7 +21,7 @@
                                 <div class="grey--text">{{mentor.etiqueta}}</div>
                             </v-card-text>
                             <v-card-text>
-                                <v-btn depressed color="#CE0F65" dark>
+                                <v-btn depressed color="#CE0F65" dark :to="rutaChat" link>
                                     <v-icon small left> mdi-message </v-icon>
                                     <span>Message</span>
                                 </v-btn>
@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "mentors",
+  name: "Mentors",
   data: () => ({
     mentores:[
         {
@@ -59,8 +59,10 @@ export default {
             etiqueta:"Mentor",
             img:"/mentor3.jpg",
         }
-    ]
+    ],
+    rutaChat: "Chat",
   }),
+  
   components: {}
 };
 </script>

@@ -1,11 +1,11 @@
 <template>
   <v-app id="inspire">
     <Header></Header>
-    <v-content >
+    <v-main >
       <v-container class="fill-height" fluid>
         <router-view />
       </v-container>
-    </v-content>
+    </v-main>
     <v-footer color="#002855">
       <Footer></Footer>
     </v-footer>
@@ -25,10 +25,7 @@ export default {
 </script>
 
 <style>
-  .v-content{
+  .v-main{
     background-color: #002855;
-  }
-  .v-footer{
-    box-shadow: 0px 5px 8px rgb(44, 44, 44);
   }
 </style>
