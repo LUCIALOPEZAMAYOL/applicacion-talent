@@ -114,7 +114,7 @@
                                 <v-card-title> <p>Contactar con un mentor</p> </v-card-title>
                             </v-row> 
                             <v-row class="btn" justify="center">                          
-                                <v-btn depressed color="#CE0F65" dark :to="rutaChat" link>
+                                <v-btn depressed color="#CE0F65" dark :to="rutaMentors" link>
                                     Enviar mensaje
                                 </v-btn>
                             </v-row>
@@ -157,7 +157,7 @@ export default {
         temas: ["Tema1", "Tema2", "Tema3", "Tema4"],
       }
     ],
-    rutaChat: "chat"
+    rutaMentors: "mentors"
   })
 };
 </script>
@@ -174,10 +174,6 @@ export default {
         max-width: 450px;
         min-height: 500px;
         border-radius: 10px;
-    }
-
-    #card::before{
-        opacity: 0.5;
     }
     p, strong{
         color:#fff;

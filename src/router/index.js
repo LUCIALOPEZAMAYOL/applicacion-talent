@@ -17,9 +17,9 @@ export default new Router({
           component: () => import("@/views/Home")
         },
         {
-          name: "chat",
-          path: "chat",
-          component: () => import("@/views/Chat")
+          name: "mentors",
+          path: "mentors",
+          component: () => import("@/views/Mentors")
         }
       ]
     },
